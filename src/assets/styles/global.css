@@ -1,0 +1,39 @@
+:root {
+    font-size: 60%;
+/* colors */
+    --color-background: #F3EBD4;
+    --color-body: #FFCC33;
+    --color-button: #9E1109;
+    --color-footer: #000000;
+    --color-detail: #9E9E9E;
+    --color-text-primary: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body, 
+#root {
+    height: 100vh;
+    width: 100vw;
+}
+
+html,
+body,
+input,
+button,
+textarea {
+    font: 400 1.2rem Poppins;
+    color: var(--color-text-primary);
+}
+
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
