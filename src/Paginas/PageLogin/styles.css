@@ -7,15 +7,14 @@
 
 }
 #bodyLogin {
-    height: 100vh;
-    width: 60vw;
+    height: 100%;
+    width: 60%;
     margin-left: 20%;
     margin-right: 20%;
     background-color: var(--color-body);
 }
 
 #areaLogin #bodyLogin .form-login {
-    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,4 +27,5 @@
     margin-left: -20%;
     margin-right: -20%;
     background: var(--color-text-primary);
+    box-shadow: 1px 1px 2px 1px var(--color-detail);
 }

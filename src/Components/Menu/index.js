@@ -11,21 +11,29 @@ const menu = props => {
     return (
 
        <div id='menu'>
+            <div className='pesquisa'>
+                    <input placeholder='Digite sua pesquisa...' type='text' />
+                    <button title='Ok' onClick='' type='submit'>Ok</button>
+            </div>
+            <div className='menu-links'>
             <img src={logo} className='logo' />
-            <ul className="menu-links">
+            
+            <ul>
                 <li>
-                    <Link to="/login">O Restaurante</Link>
+                    <Link to='/login'>O Restaurante</Link>
                 </li>
                 <li>
-                    <Link to="/login">Cardápio</Link>
+                    <Link to='/login'>Cardápio</Link>
                 </li>
                 <li>
-                    <Link to="/login" ><img src={login} alt='Entre na sua conta' /></Link>
+                    <Link to='/login' ><img src={login} alt='Entre na sua conta' /></Link>
                 </li>
                 <li>
                     <Link><img src={carrinhoCompras} alt='Carrinho de compras' /></Link>
                 </li>
+
             </ul>
+            </div>
         </div>
 
     );
