@@ -15,23 +15,25 @@ const menu = props => {
        <div id='menu'>
             <BarraPesquisa />
             <div className='menu-links'>
-            <img src={logo} className='logo' />
-            
-            <ul>
-                <li>
-                    <Link to='/login'>O Restaurante</Link>
-                </li>
-                <li>
-                    <Link to='/login'>Cardápio</Link>
-                </li>
-                <li>
-                    <Link to='/login' ><img src={login} alt='Entre na sua conta' /></Link>
-                </li>
-                <li>
-                    <Link><img src={carrinhoCompras} alt='Carrinho de compras' /></Link>
-                </li>
+                <img src={logo} className='logo' />
+                
+                <div className='faixa-vermelha'>
+                    <ul>
+                        <li>
+                            <Link to='/login'>O Restaurante</Link>
+                        </li>
+                        <li>
+                            <Link to='/login'>Cardápio</Link>
+                        </li>
+                        <li>
+                            <Link to='/login' ><img src={login} alt='Entre na sua conta' /></Link>
+                        </li>
+                        <li>
+                            <Link><img src={carrinhoCompras} alt='Carrinho de compras' /></Link>
+                        </li>
 
-            </ul>
+                    </ul>
+                </div>
             </div>
         </div>
 
