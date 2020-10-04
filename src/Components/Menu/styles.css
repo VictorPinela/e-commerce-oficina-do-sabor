@@ -1,12 +1,21 @@
 #menu {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.0rem 1rem;
+}
+
+
+#menu .menu-links {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem;
+    padding: 1rem;
+    width: 100%;
 }
-
 #menu .logo {
     border-radius: 50%;
     width: 9rem;
@@ -24,18 +33,16 @@
 
 #menu ul li {
     font-size: 1.6rem;
-    margin-right: 1.6rem;
+    margin-right: 3rem;
     color: var(--color-text-primary);
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 #menu ul li a {
     text-decoration: none;
 }
-@media(min-width: 700px) {
-    #menu ul {
-        /* display: none; */
-    }
 
+@media(min-width: 700px) {
+  
     #menu ul li {
         font-size: 1.8rem;
     }
