@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import BarraPesquisa from '../../Components/Pesquisa';
+
 import logo from '../../assets/images/sem_foto.png';
 import carrinhoCompras from '../../assets/images/cart_2.png';
 import login from '../../assets/images/user.png';
@@ -11,10 +13,7 @@ const menu = props => {
     return (
 
        <div id='menu'>
-            <div className='pesquisa'>
-                    <input placeholder='Digite sua pesquisa...' type='text' />
-                    <button title='Ok' onClick='' type='submit'>Ok</button>
-            </div>
+            <BarraPesquisa />
             <div className='menu-links'>
             <img src={logo} className='logo' />
             

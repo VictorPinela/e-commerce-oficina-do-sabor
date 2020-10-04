@@ -6,34 +6,8 @@
     align-items: center;
     padding: 2.0rem 1rem;
 }
-#menu .pesquisa {
-    float: center;
-    padding-top: 1.4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-#menu input {
-    border-radius: 4px;
-    box-shadow: 1px 1px 2.5px var(--color-detail);
-    border:1px solid #FFFFFF;
-    width:48rem;
-    height: 2.6rem;
-    font-size: 1.4rem;
-    color: #000000;
-}
-#menu button {
-    width: 4rem;
-    height: 2.6rem;
-    margin-left: 0.5rem;
-    border-radius: 4px;
-    background-color: var(--color-button);
-    color: var(--color-text-primary);
-    font-size: 1rem;
-    border:0.5px solid #FFFFFF;
-    box-shadow: 1px 1px 1px var(--color-detail);
-}
+
+
 #menu .menu-links {
     display: flex;
     flex-direction: row;
