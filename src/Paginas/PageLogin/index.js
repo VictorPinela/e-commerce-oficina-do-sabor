@@ -1,8 +1,12 @@
 import React from 'react';
-import styles from './styles.css';
+
 import Menu from '../../Components/Menu';
 
-const Initial = () => {
+import styles from './styles.css';
+
+
+const PageLogin = props => {
+
     return (
         <div id='areaLogin'>
             <div id='bodyLogin'>
@@ -12,7 +16,7 @@ const Initial = () => {
                    <div className='login'>
                         <div className='conteudo'>
 
-                            <h1>teste meu deus</h1>
+                         
                         </div>
                     </div>
                 </div>
@@ -20,6 +24,7 @@ const Initial = () => {
             </div>
         </div>
     );
+
 }
 
-export default Initial;
+export default PageLogin;

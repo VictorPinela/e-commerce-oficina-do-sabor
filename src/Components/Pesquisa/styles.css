@@ -1,0 +1,48 @@
+
+.pesquisa {
+    padding-top: 1.4rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+input {
+    border-radius: 4px;
+    box-shadow: 1px 1px 2.5px var(--color-detail);
+    border:1px solid #FFFFFF;
+    width:70vw;
+    height: 2.9rem;
+    font-size: 1.4rem;
+    color: #000000;
+}
+
+button {
+    width: 4rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    background-color: var(--color-button);
+    font-size: 1rem;
+    border:0.5px solid #FFFFFF;
+    box-shadow: 1px 1px 1px var(--color-detail);
+}
+button img {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.4rem;
+
+}
+@media(min-width: 800px) {
+
+    input {
+        width:40vw;
+
+    }
+}
+@media(max-width: 360px) {
+    input {
+        width:70vw;
+        height: 2.5rem;
+    }
+
+}
