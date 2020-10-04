@@ -1,16 +1,16 @@
 #menu {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 2.0rem 1rem;
+    padding: 1rem 1rem;
 }
 
 
 #menu .menu-links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
@@ -18,36 +18,94 @@
 }
 #menu .logo {
     border-radius: 50%;
-    width: 9rem;
-    height: 9rem;
+    width: 13rem;
+    height: 13rem;
+    margin-bottom: 1%;
+    position: absolute;
 }
 
-#menu ul {
+#menu .menu-links .faixa-vermelha{
+    background-color: var(--color-button);
+    width:90vw;
+    margin-top: 15vh;
+    padding-top: 2.6vh;
+}
+
+#menu  ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 #menu ul li {
     font-size: 1.6rem;
-    margin-right: 3rem;
+    margin-right: 2vw;
+    margin-left: 2vw;
     color: var(--color-text-primary);
-    margin-top: 4rem;
-}
-#menu ul li a {
-    text-decoration: none;
+    margin-top: 1rem;
 }
 
-@media(min-width: 700px) {
-  
+#menu ul li a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+li:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-button);
+    padding:0;
+
+
+}
+
+@media(min-width: 800px) {
+    #menu {
+        flex-direction: column;
+        padding:0;
+        margin-bottom: 4vh;
+    }   
+    #menu .menu-links {
+        flex-direction: row;
+        padding: 0;
+        margin: 2rem;
+    }
+    #menu .menu-links .logo {
+        position: absolute;
+        margin: 1rem;
+        z-index: 1;
+    }
+    
+    #menu .menu-links .faixa-vermelha{
+         width:100vw;
+         margin-top:3rem;
+         padding-top: 0;
+    }
+    
+    #menu  ul {
+        float:right;
+    }
+    
     #menu ul li {
-        font-size: 1.8rem;
+        display: flex;
+        justify-content: right;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.4rem;
+        margin-bottom: 1rem;
     }
-    #menu ul li a {
-        text-decoration: none;
-        color: var(--color-text-primary);
+
+}    
+@media(max-width: 360px) {
+    #menu .logo {
+        width: 10rem;
+        height: 10rem;
     }
+    #menu .menu-links .faixa-vermelha{
+        width:90vw;
+    }
+    #menu ul li {
+        font-size: 1.4rem;
+    }
+
 }
