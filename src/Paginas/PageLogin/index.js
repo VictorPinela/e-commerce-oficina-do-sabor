@@ -16,7 +16,7 @@ const PageLogin = props => {
                    <div className='login'>
                         <div className='conteudo'>
 
-                            <h1>teste meu deus</h1>
+                         
                         </div>
                     </div>
                 </div>
