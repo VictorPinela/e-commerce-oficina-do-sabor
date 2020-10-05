@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import BarraPesquisa from '../../Components/Pesquisa';
 
-import logo from '../../assets/images/sem_foto.png';
+import logo from '../../assets/images/Logo-site.png';
 import carrinhoCompras from '../../assets/images/cart_2.png';
 import login from '../../assets/images/user.png';
 
@@ -12,11 +12,11 @@ import styles from './styles.css';
 const menu = props => {
     return (
 
-       <div id='menu'>
+        <div id='menu'>
             <BarraPesquisa />
             <div className='menu-links'>
                 <img src={logo} className='logo' />
-                
+
                 <div className='faixa-vermelha'>
                     <ul>
                         <li>
