@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+button{
+    width: 100%;
+}
+
 #bodyInitial {
     height: 100%;
     width: 90%;
@@ -24,6 +28,7 @@
     border: 1px solid #CCC ;
     border-radius: 5px;
     margin: 5px;
+    padding: 10px;
 
 }
 
@@ -34,14 +39,15 @@
     margin-right: -5%;
     background: var(--color-text-primary);
     box-shadow: 1px 1px 2px 1px var(--color-detail);
+    color: black;
 }
 
 #tituloPag {
     background-color: var(--color-button);
-    margin: 10px;
-    height: 10vh;
-    width: 100%;
+    flex: 1;
     text-align: center;
+    color: white;
+    border-radius: 5px;
 }
 
 @media(min-width: 800px) {

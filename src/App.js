@@ -8,6 +8,7 @@ import Initial from './Paginas/Inicial';
 import Detalhe from './Paginas/Detalhe-Produto';
 import Cesta from './Paginas/Cesta-Produto';
 import Busca from './Paginas/Busca-Produto';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
