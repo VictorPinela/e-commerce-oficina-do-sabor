@@ -59,6 +59,20 @@ li:hover {
     padding: 0;
 }
 
+@media(min-width: 500px) {
+    #menu .logo {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media(min-width: 600px) {
+    #menu .logo {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
 @media(min-width: 800px) {
     #menu {
         flex-direction: column;
@@ -96,7 +110,14 @@ li:hover {
     }
 }
 
-@media(max-width: 360px) {
+@media(min-width: 361px) and (max-width: 499px){
+    #menu .logo {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media(max-width: 360px){
     #menu .logo {
         width: 10rem;
         height: 10rem;
