@@ -19,17 +19,20 @@ const menu = props => {
 
                 <div className='faixa-vermelha'>
                     <ul>
-                        <li>
+                        {/* <li>
                             <Link to='/login'>O Restaurante</Link>
+                        </li> */}
+                        <li>
+                            <Link to='/'>Produtos</Link>
                         </li>
                         <li>
-                            <Link to='/login'>Cardápio</Link>
+                            <Link to='#'>Cardápio</Link>
                         </li>
                         <li>
                             <Link to='/login' ><img src={login} alt='Entre na sua conta' /></Link>
                         </li>
                         <li>
-                            <Link><img src={carrinhoCompras} alt='Carrinho de compras' /></Link>
+                            <Link to='/cesta-produto' ><img src={carrinhoCompras} alt='Carrinho de compras' /></Link>
                         </li>
 
                     </ul>
