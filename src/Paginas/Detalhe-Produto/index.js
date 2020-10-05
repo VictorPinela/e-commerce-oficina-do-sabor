@@ -1,15 +1,17 @@
 import React from 'react';
+import DescProduto from '../../Components/DescProduto/index'
 import styles from './styles.css';
 import Menu from '../../Components/Menu';
 
 const Initial = () => {
     return (
-
-        <div id='area'>
-            <div id='body'>
+        <div id='areaLogin'>
+            <div id='bodyLogin'>
                 <Menu />
-                <div className='form-initial'>
-                    <div className='initial'></div>
+                <div className='form-login'>                
+                   <div className='login'>                        
+                        <DescProduto/>                        
+                    </div>
                 </div>
 
             </div>

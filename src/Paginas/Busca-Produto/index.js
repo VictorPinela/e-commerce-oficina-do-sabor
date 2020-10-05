@@ -4,12 +4,17 @@ import Menu from '../../Components/Menu';
 
 const Initial = () => {
     return (
-
-        <div id='area'>
-            <div id='body'>
+        <div id='areaLogin'>
+            <div id='bodyLogin'>
                 <Menu />
-                <div className='form-initial'>
-                    <div className='initial'></div>
+                <div className='form-login'>
+                
+                   <div className='login'>
+                        <div className='conteudo'>
+
+                            <h1>teste meu deus</h1>
+                        </div>
+                    </div>
                 </div>
 
             </div>
