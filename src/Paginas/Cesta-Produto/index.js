@@ -1,47 +1,46 @@
 import React from 'react';
-import styles from './styles.css';
+import styles from './styles.css'
 import Menu from '../../Components/Menu';
+import TabCesta from '../../Components/TabCesta';
+
 
 const Cesta = () => {
     return (
-        <div id='areaCesta'>
-            <div id='bodyCesta'>
-                <Menu />
-                <div className='formCesta'>
-                   <div className='Cesta'>
-                        <div className='conteudoCesta'>
-                            <h1>Sua cesta</h1>
+            <div id='areaCesta'>
+                <div id='bodyCesta'>
+                    <Menu />
+                    <div className='form-Cesta'>
+                        <div className='Cesta'>
+                            <div className='borda-interna'>
+                                <h1 id='tituloPag'>Sua cesta</h1>
+                                <TabCesta />
+                                <table id='tabela'>
+                                    <tr>
+                                        <td>Item</td>
+                                        <td>Quantidade</td>
+                                        <td>Valor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pizza</td>
+                                        <td>1</td>
+                                        <td>R$30,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>1</td>
+                                        <td>R$30,00</td>
+                                    </tr>
+                                </table>
+                                <div id='btn'>
+                                    <button id='botao'>Limpar cesta</button>
+                                    <button id='botao'>Finalizar Compra</button>
+                                </div>
+                            </div>
                         </div>
-                        <table class='tabela'>
-                                <tr className='colunaTitulo'>
-                                    <td>Item</td>
-                                    <td>Quantidade</td>
-                                    <td>Valor</td>
-                                </tr>
-                                <tr className='coluna'>
-                                    <td>pizza</td>
-                                    <td>1</td>
-                                    <td>R$30,00</td>
-                                </tr>
-                                <tr className='coluna'>
-                                    <td>Hamburger</td>
-                                    <td>2</td>
-                                    <td>R$10,00</td>
-                                </tr>
-                                <tr className='colunaTotal'>
-                                    <td>Total</td>
-                                    <td>3</td>
-                                    <td>R$50,00</td>
-                                </tr>
-                        </table>
                     </div>
-                </div>
-                <div>
-                    <button class='botoes'>Limpar</button>
-                    <button class='botoes'>Finalizar</button>
+
                 </div>
             </div>
-        </div>
     );
 }
 
