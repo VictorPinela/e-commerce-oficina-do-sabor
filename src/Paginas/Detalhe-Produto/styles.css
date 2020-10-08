@@ -1,68 +1,62 @@
-#areaLogin , html{
+#areaProduto, html {
     background-color: var(--color-background);
     height: 100vh;
     width: 100vw;
-    margin:0;
+    margin: 0;
     padding: 0;
- 
- }
-
- 
- #bodyLogin {
-     height: 100%;
-     width: 90%;
-     margin-left: 5%;
-     margin-right: 5%;
-     background-color: var(--color-body);
- }
- 
- #areaLogin #bodyLogin .form-login {
-     display: flex;
-     align-items: center;
-     justify-content: center; 
- }
- 
- #areaLogin #bodyLogin .form-login .login {
-     height: auto;
-     width: 130%;
-     margin-left: -5%;
-     margin-right: -5%;
-     background: var(--color-text-primary);
-     box-shadow: 1px 1px 2px 1px var(--color-detail);
-     padding: 10px;
- }
- #areaLogin #bodyLogin .login .conteudo {
-     margin-left: 15%; 
-     margin-right: 15%;
-     background-color: red;
-     float: center;
-     padding-left: 5%;
- }
- 
-  
-@media(min-width: 800px) {
-
-#bodyLogin {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
-#areaLogin #bodyLogin .login {
+#bodyProduto {
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--color-body);
+}
+
+#areaProduto #bodyProduto .form-Produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#areaProduto #bodyProduto .form-Produto .borda-interna {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#areaProduto #bodyProduto .Produto {
     height: auto;
-    width: 140%;
-    margin-left: -20%;
-    margin-right: -20%;
-}
-#areaLogin #bodyLogin .login .conteudo {
-    margin-left: 15%; 
-    margin-right: 15%;
-    background-color: red;
-    float: center;
-    padding-left: 5%;
+    width: 130%;
+    margin-left: -5%;
+    margin-right: -5%;
+    background: var(--color-text-primary);
+    box-shadow: 1px 1px 2px 1px var(--color-detail);
+    color: black;
 }
 
+#tituloPag {
+    background-color: var(--color-button);
+    flex: 1;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-top: 0;
 }
 
-
-
+@media(min-width: 800px) {
+    #bodyProduto {
+        height: 100vh;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #areaProduto #bodyProduto .Produto {
+        height: auto;
+        width: 140%;
+        margin-left: -20%;
+        margin-right: -20%;
+    }
+}

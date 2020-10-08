@@ -3,20 +3,21 @@ import DescProduto from '../../Components/DescProduto/index'
 import styles from './styles.css';
 import Menu from '../../Components/Menu';
 
-const Initial = () => {
+const Produto = () => {
     return (
-        <div id='areaLogin'>
-            <div id='bodyLogin'>
+        <div id='areaProduto'>
+            <div id='bodyProduto'>
                 <Menu />
-                <div className='form-login'>                
-                   <div className='login'>                        
-                        <DescProduto/>                        
+                <div className='form-Produto'>
+                    <div className='Produto'>
+                        <div className='borda-interna'>
+                            <DescProduto />
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     );
 }
 
-export default Initial;
+export default Produto;
