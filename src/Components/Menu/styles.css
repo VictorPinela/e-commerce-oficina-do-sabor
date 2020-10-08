@@ -28,8 +28,9 @@
 #menu .menu-links .faixa-vermelha {
     background-color: var(--color-button);
     width: 90vw;
-    margin-top: 40%;
-    padding-top: 2.6vh;
+    margin-top: 24vh;
+    padding: 0;
+    height: 4.5rem;
 }
 
 #menu ul {
@@ -37,7 +38,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 #menu ul li {
@@ -45,7 +47,6 @@
     margin-right: 2vw;
     margin-left: 2vw;
     color: var(--color-text-primary);
-    margin-top: 1rem;
 }
 
 #menu ul li a {
@@ -56,7 +57,7 @@
 li:hover, li a:hover {
     background-color: var(--color-hover-back);
     color: var(--color-button);
-    
+    transition: all 0.4s linear;
     padding: 0;
 }
 
@@ -69,8 +70,8 @@ li:hover, li a:hover {
 
 @media(min-width: 600px) {
     #menu .logo {
-        width: 20rem;
-        height: 20rem;
+        width: 15rem;
+        height: 15rem;
     }
 }
 
@@ -80,6 +81,7 @@ li:hover, li a:hover {
         padding: 0;
         margin-bottom: 4vh;
     }
+
     #menu .menu-links {
         flex-direction: row;
         padding: 0;
@@ -95,19 +97,23 @@ li:hover, li a:hover {
     #menu .menu-links .faixa-vermelha {
         width: 100vw;
         margin-top: 3rem;
-        padding-top: 0;
+        padding: 0;
+        height: 4.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
     }
     #menu ul {
         float: initial;
         padding-left: 120px;
     }
     #menu ul li {
-        display: flex;
-        justify-content: right;
-        flex-direction: row;
+        justify-content: space-evenly;
+        flex-direction: column;
         align-items: center;
-        margin-top: 1.4rem;
-        margin-bottom: 1rem;
+        display: inherit;
+        margin-top: 0;
+
     }
 }
 
@@ -120,11 +126,12 @@ li:hover, li a:hover {
 
 @media(max-width: 360px){
     #menu .logo {
-        width: 10rem;
-        height: 10rem;
+        width: 12rem;
+        height: 12rem;
     }
     #menu .menu-links .faixa-vermelha {
         width: 90vw;
+        margin-top: 20vh;
     }
     #menu ul li {
         font-size: 1.4rem;

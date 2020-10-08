@@ -19,9 +19,6 @@ const menu = props => {
 
                 <div className='faixa-vermelha'>
                     <ul>
-                        {/* <li>
-                            <Link to='/login'>O Restaurante</Link>
-                        </li> */}
                         <li>
                             <Link to='/'>Produtos</Link>
                         </li>
