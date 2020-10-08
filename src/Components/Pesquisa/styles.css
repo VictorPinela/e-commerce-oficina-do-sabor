@@ -1,20 +1,24 @@
-
 .pesquisa {
     padding-top: 1.4rem;
     display:flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 
 }
-input {
+#pesquisaSite  {
+    color: black;
     border-radius: 4px;
     box-shadow: 1px 1px 2.5px var(--color-detail);
     border:1px solid #FFFFFF;
     width:70vw;
     height: 2.9rem;
     font-size: 1.4rem;
-    color: #000000;
 }
+
+#pesquisaSite:focus {
+    border: 1px solid #b2b2b2;
+  }
 
 button {
     width: 4rem;
@@ -26,6 +30,9 @@ button {
     border:0.5px solid #FFFFFF;
     box-shadow: 1px 1px 1px var(--color-detail);
 }
+button:hover{
+    background: var(--color-hover-back);
+}
 button img {
     width: 2rem;
     height: 2rem;
@@ -33,16 +40,16 @@ button img {
 
 }
 @media(min-width: 800px) {
-
-    input {
-        width:40vw;
-
+    #pesquisaSite {
+        width:35vw;
     }
+
 }
 @media(max-width: 360px) {
-    input {
+    #pesquisaSite {
         width:70vw;
         height: 2.5rem;
+        
     }
 
 }
