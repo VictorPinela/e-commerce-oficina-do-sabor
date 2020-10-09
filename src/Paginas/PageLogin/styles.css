@@ -20,17 +20,16 @@
  } 
  #areaLogin #bodyLogin .borda-interna {
     height: auto;
-    width: 130%;
+    width: 110%;
     margin-left: -5%;
     margin-right: -5%;
-    background: var(--color-text-primary);
-    box-shadow: 1px 1px 2px 1px var(--color-detail);
-    color: black;
+    color:black;
  }
  #areaLogin #bodyLogin .borda-interna .conteudo {
      border: 1px solid #CCC;
      border-radius: 5px;
-     margin: 5px;
+     position: relative;
+     padding: 10px;
  }
  #areaLogin #bodyLogin .borda-interna .conteudo #tituloPag {
     background-color: var(--color-button);
@@ -40,17 +39,14 @@
     border-radius: 5px;
     margin-top: 0;
 }
-form {
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
 a{
     text-decoration: none;
 }
 a.links{
     display: none;
+}
+.link a:hover {
+    color: var(--color-hover-back);
 }
 p{
     margin-bottom:2.5rem;
@@ -109,13 +105,154 @@ input[type="submit"]{
     transition: all 0.2s linear;
   }
    
-  /*estilo do botão submit no hover */
-  input[type="submit"]:hover{
+/*estilo do botão submit no hover */
+input[type="submit"]:hover{
     background: var(--color-hover-back);
+}
+
+#cadastro, 
+#entrar{
+    position: absolute;
+    top: 0px;
+    width: 100%;   
+    background: var(--color-text-primary);
+    box-shadow: 1px 1px 2px 1px var(--color-detail);
+
+        
+    -webkit-box-shadow: 5px;
+
+        
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+#entrar #esqueci-senha {
+    position: absolute;
+    width: 100%;
+    background: var(--color-text-primary);
+    top:10%;
+    
+    -webkit-box-shadow: 5px;
+
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+#entrar #esqueci-senha .titulo-esqueci {
+    font-size: 1.8rem;
+    text-align: center;
+}
+  /* Efeito ao clicar no botão ( Ir para Login ) */
+#paracadastro:target ~ .conteudo #cadastro,
+#paralogin:target ~ .conteudo #entrar{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+ 
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+ 
+/* Efeito ao clicar ( Cadastre-se ) */
+#paracadastro:target ~ .conteudo #entrar,
+#paralogin:target ~ .conteudo #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+  /* Efeito ao clicar  ( Esqueci minha senha ) */
+#paraNovaSenha:target ~ .conteudo #esqueci-senha,
+#paralogin:target ~ .conteudo #entrar{
+    z-index: 2;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+}
+/* Efeito ao clicar  ( Enviar nova senha ) */
+#paraNovaSenha:target ~ .conteudo #entrar,
+#paralogin:target ~ .conteudo #esqueci-senha{
+        -webkit-animation-name: fadeOutLeft;
+        animation-name: fadeOutLeft;
+}
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
   }
+   
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+   
+  /*fadeOutLeft*/
+  @-webkit-keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+  }
+   
+  @keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+#entrar form {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#entrar p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 
+#order-cadastro div {
+    display:inline-grid;
+    align-items: center;
+}
+#order-cadastro .cadastro_acesso {
+    padding-right:3rem;
+    padding-left: 3rem;
 
-@media(min-width: 800px) {
+}
+#order-cadastro .cadastro_dados_pessoais {
+    padding-left:5rem;
+    
+} 
+
+@media(min-width: 350px) {
 
 #bodyLogin {
     height: 100%;
@@ -124,39 +261,15 @@ input[type="submit"]{
     margin-right: 5%;
     background-color: var(--color-body);
 }
-
-#areaLogin #bodyLogin .borda-interna {
-    width: 140%;
-    margin-left: -20%;
-    margin-right: -20%;
-}
-
-#areaLogin #bodyLogin .form-Login .borda-interna {
-    border: 1px solid #CCC;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
-}
-
 #areaLogin #bodyLogin .Login {
     height: auto;
-    width: 130%;
+    width: 120%;
     margin-left: -5%;
     margin-right: -5%;
     background: var(--color-text-primary);
     box-shadow: 1px 1px 2px 1px var(--color-detail);
     color: black;
 }
-
-#tituloPag {
-    background-color: var(--color-button);
-    flex: 1;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-    margin-top: 0;
-}
-
 @media(min-width: 800px) {
     #bodyLogin {
         height: 100vh;
@@ -170,5 +283,34 @@ input[type="submit"]{
         margin-left: -20%;
         margin-right: -20%;
     }
+
+    #areaLogin #bodyLogin .borda-interna {
+        height: auto;
+        width: 140%;
+        margin-left: -20%;
+        margin-right: -20%;
+    }
+
+    #areaLogin #bodyLogin .form-Login .borda-interna {
+        margin: 5px;
+        padding: 10px;
+    }
+    #tituloPag {
+        background-color: var(--color-button);
+        flex: 1;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+        margin-top: 0;
+    }
+    #entrar form {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #order-cadastro div {
+        display:inline-grid;
+        margin-left: 10rem;  
+        align-items: center;
+    }    
 }
 }
