@@ -1,48 +1,42 @@
 import React from 'react';
-import styles from './styles.css';
+import styles from './styles.css'
 import Menu from '../../Components/Menu';
+import TabCesta from '../../Components/TabCesta';
+import TabItem from '../../Components/TabCesta/TabItem';
+
 
 const Cesta = () => {
     return (
         <div id='areaCesta'>
             <div id='bodyCesta'>
                 <Menu />
-                <div className='formCesta'>
-                   <div className='Cesta'>
-                        <div className='conteudoCesta'>
-                            <h1>Sua cesta</h1>
+                <div className='form-Cesta'>
+                    <div className='Cesta'>
+                        <div className='borda-interna'>
+                            <h1 id='tituloPag'>Sua cesta</h1>
+                            <TabCesta />
+                            <div id='btn'>
+                                <button id='botao1' onClick={()=> Deletar()}>Limpar cesta</button>
+                                <button id='botao2' onClick={()=> Finalizar()}>Finalizar Compra</button>
+                            </div>
                         </div>
-                        <table class='tabela'>
-                                <tr className='colunaTitulo'>
-                                    <td>Item</td>
-                                    <td>Quantidade</td>
-                                    <td>Valor</td>
-                                </tr>
-                                <tr className='coluna'>
-                                    <td>pizza</td>
-                                    <td>1</td>
-                                    <td>R$30,00</td>
-                                </tr>
-                                <tr className='coluna'>
-                                    <td>Hamburger</td>
-                                    <td>2</td>
-                                    <td>R$10,00</td>
-                                </tr>
-                                <tr className='colunaTotal'>
-                                    <td>Total</td>
-                                    <td>3</td>
-                                    <td>R$50,00</td>
-                                </tr>
-                        </table>
                     </div>
-                </div>
-                <div>
-                    <button class='botoes'>Limpar</button>
-                    <button class='botoes'>Finalizar</button>
                 </div>
             </div>
         </div>
     );
+}
+
+function Deletar(){
+    if(document.getElementById("tab1") != null){
+    document.getElementById("tab1").remove();}
+    else(
+        alert('Cesta vazia!')
+    )
+}
+
+function Finalizar(){
+    alert('Compra finalizada!')
 }
 
 export default Cesta;
