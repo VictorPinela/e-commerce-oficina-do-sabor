@@ -3,10 +3,13 @@
     height: 100%;
 }
 
-.nome-produto{
-    color: black;
-    max-width: 45%;
+.nome-produto {
+    background-color: var(--color-button);
+    flex: 1;
     text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-top: 0;
 }
 
 .container .div-img{

@@ -104,12 +104,11 @@ const PageLogin = props => {
                     </div>
 
                 </div>
-
             </div>
   
         </div>
     );
-
 }
+
 
 export default PageLogin;
