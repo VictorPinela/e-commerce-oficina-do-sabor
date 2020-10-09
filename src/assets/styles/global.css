@@ -4,7 +4,7 @@
     --color-background: #F3EBD4;
     --color-body: #FFCC33;
     --color-button: #9E1109;
-    --color-footer: #000000;
+    --color-footer: #292929;
     --color-detail: #9E9E9E;
     --color-text-primary: #FFFFFF;
     --color-hover-back: #FA8072;
@@ -25,7 +25,6 @@ body,
 
 html,
 body,
-input,
 button,
 textarea {
     font: 400 1.2rem Poppins;
@@ -33,7 +32,7 @@ textarea {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     :root {
         font-size: 62.5%;
     }
