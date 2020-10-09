@@ -31,7 +31,25 @@
      position: relative;
      padding: 10px;
  }
- #areaLogin #bodyLogin .borda-interna .conteudo #tituloPag {
+
+#areaLogin #bodyLogin .borda-interna .conteudo #cadastro, 
+#areaLogin #bodyLogin .borda-interna .conteudo #entrar{
+    position: absolute;
+    top: 0px;
+    width: 100%;   
+    background: var(--color-text-primary);
+    box-shadow: 1px 1px 2px 1px var(--color-detail);
+   
+    -webkit-box-shadow: 5px;     
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+#areaLogin #bodyLogin .borda-interna .conteudo #tituloPag {
     background-color: var(--color-button);
     flex: 1;
     text-align: center;
@@ -39,151 +57,68 @@
     border-radius: 5px;
     margin-top: 0;
 }
-a{
-    text-decoration: none;
+#entrar .button-logar,
+#entrar .esqueceu_senha,
+#entrar .link {
+    text-align: center;
+    align-content: center;
 }
-a.links{
-    display: none;
-}
-.link a:hover {
-    color: var(--color-hover-back);
-}
-p{
-    margin-bottom:2.5rem;
-}
-.conteudo p:first-child{
-    margin-top:5rem;
-}
-label {
-    color: var(--color-detail);
-    position: relative;
+#entrar .esqueceu_senha button{
+    width: 20%;
+    font-size: 1rem;
+    border: none;
 }
 
-input {
-    outline: none;
-}
-::-webkit-input-placeholder  {
-    color: #bebcbc; 
-    font-style: italic;
-}
-input:-moz-placeholder,
-textarea:-moz-placeholder{
-    color: #bebcbc;
-    font-style: italic;
-}
-/*estilo dos input,  menos o checkbox */
-input:not([type="checkbox"]){
-    width: 100%;
-    padding: 10px;    
-    border: 1px solid #b2b2b2;
-   
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-   
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-   
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-/*estilo do botão submit */
-input[type="submit"]{
-    background: var(--color-button);
-    color: var(--color-text-primary);
-    font: 400 1.2rem Poppins;
-    font-size: 1.4rem;
-    border: 1px solid #fff;    
-
-    padding: 8px 5px;     
-    margin-bottom: 10px;  
-    width: 100%!important;
-    cursor: pointer;
-   
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-   
-    transition: all 0.2s linear;
-  }
-   
-/*estilo do botão submit no hover */
-input[type="submit"]:hover{
-    background: var(--color-hover-back);
-}
-
-#cadastro, 
-#entrar{
-    position: absolute;
-    top: 0px;
-    width: 100%;   
-    background: var(--color-text-primary);
-    box-shadow: 1px 1px 2px 1px var(--color-detail);
-
-        
-    -webkit-box-shadow: 5px;
-
-        
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-}
-#entrar #esqueci-senha {
-    position: absolute;
-    width: 100%;
-    background: var(--color-text-primary);
-    top:10%;
-    
-    -webkit-box-shadow: 5px;
-
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
+#entrar #esqueci-senha .titulo-esqueci {
+    font-size: 1.8rem;
+    text-align: center;
 }
 #entrar #esqueci-senha .titulo-esqueci {
     font-size: 1.8rem;
     text-align: center;
 }
-  /* Efeito ao clicar no botão ( Ir para Login ) */
-#paracadastro:target ~ .conteudo #cadastro,
-#paralogin:target ~ .conteudo #entrar{
-  z-index: 2;
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
- 
-  -webkit-animation-delay: .1s;
-  animation-delay: .1s;
+#entrar form {
+    margin-left: 10%;
+    margin-right: 10%;
 }
- 
-/* Efeito ao clicar ( Cadastre-se ) */
-#paracadastro:target ~ .conteudo #entrar,
-#paralogin:target ~ .conteudo #cadastro{
-  -webkit-animation-name: fadeOutLeft;
-  animation-name: fadeOutLeft;
+#entrar p {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
-  /* Efeito ao clicar  ( Esqueci minha senha ) */
-#paraNovaSenha:target ~ .conteudo #esqueci-senha,
-#paralogin:target ~ .conteudo #entrar{
+#order-cadastro div {
+    display:inline-grid;
+    align-items: center;
+}
+#order-cadastro .cadastro_acesso {
+    padding-right:3rem;
+    padding-left: 3rem;
+
+}
+#order-cadastro .cadastro_dados_pessoais {
+    padding-left:5rem;
+    
+} 
+
+  /* Efeito ao clicar no botão ( Ir para Login ) */
+  #paracadastro:target ~ .conteudo #cadastro,
+  #paralogin:target ~ .conteudo #entrar{
     z-index: 2;
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
-
+   
     -webkit-animation-delay: .1s;
     animation-delay: .1s;
-}
-/* Efeito ao clicar  ( Enviar nova senha ) */
-#paraNovaSenha:target ~ .conteudo #entrar,
-#paralogin:target ~ .conteudo #esqueci-senha{
-        -webkit-animation-name: fadeOutLeft;
-        animation-name: fadeOutLeft;
-}
+  }
+   
+  /* Efeito ao clicar ( Cadastre-se ) */
+  #paracadastro:target ~ .conteudo #entrar,
+  #paralogin:target ~ .conteudo #cadastro{
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+  }
+
+
 /*fadeInLeft*/
 @-webkit-keyframes fadeInLeft {
     0% {
@@ -229,29 +164,81 @@ input[type="submit"]:hover{
       transform: translateX(-20px);
     }
   }
-#entrar form {
-    margin-left: 10%;
-    margin-right: 10%;
+
+/* Estilos Gerais */
+a{
+    text-decoration: none;
 }
-#entrar p {
-    padding-left: 3rem;
-    padding-right: 3rem;
+a.links{
+    display: none;
+}
+.link a:hover {
+    color: var(--color-hover-back);
+}
+p{
+    margin-bottom:2.5rem;
+}
+.conteudo p:first-child{
+    margin-top:5rem;
+}
+label {
+    color: var(--color-detail);
+    position: relative;
 }
 
-#order-cadastro div {
-    display:inline-grid;
-    align-items: center;
+input {
+    outline: none;
 }
-#order-cadastro .cadastro_acesso {
-    padding-right:3rem;
-    padding-left: 3rem;
-
+::-webkit-input-placeholder  {
+    color: #bebcbc; 
+    font-style: italic;
 }
-#order-cadastro .cadastro_dados_pessoais {
-    padding-left:5rem;
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+    color: #bebcbc;
+    font-style: italic;
+}
+/*estilo dos input,  menos o checkbox */
+input:not([type="checkbox"]){
+    width: 100%;
+    padding: 10px;    
+    border: 1px solid #b2b2b2;
     
-} 
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+/*estilo do botão submit */
+input[type="submit"]{
+    background: var(--color-button);
+    color: var(--color-text-primary);
+    font: 400 1.2rem Poppins;
+    font-size: 1.1rem;
+    border: 1px solid #fff;
 
+
+    padding: 8px 5px;     
+    margin-bottom: 10px;  
+    width: 50%!important;
+    cursor: pointer;
+    
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+    transition: all 0.2s linear;
+    }
+    
+/*estilo do botão submit no hover */
+input[type="submit"]:hover{
+    background: var(--color-hover-back);
+}
+
+/* Responsividade */
 @media(min-width: 350px) {
 
 #bodyLogin {
@@ -283,20 +270,15 @@ input[type="submit"]:hover{
         margin-left: -20%;
         margin-right: -20%;
     }
-
-    #areaLogin #bodyLogin .borda-interna {
+    #areaLogin #bodyLogin .form-Login .borda-interna {
+        margin: 5px;
+        padding: 10px;
         height: auto;
         width: 140%;
         margin-left: -20%;
         margin-right: -20%;
     }
-
-    #areaLogin #bodyLogin .form-Login .borda-interna {
-        margin: 5px;
-        padding: 10px;
-    }
-    #tituloPag {
-        background-color: var(--color-button);
+    #areaLogin #bodyLogin .borda-interna .conteudo #tituloPag {
         flex: 1;
         text-align: center;
         color: white;
@@ -309,8 +291,13 @@ input[type="submit"]:hover{
     }
     #order-cadastro div {
         display:inline-grid;
-        margin-left: 10rem;  
+        margin-left: 5rem;  
         align-items: center;
     }    
+    #order-cadastro .cadastro_acesso {
+        padding-right:0;
+        padding-left: 0;
+    
+    }
 }
 }
