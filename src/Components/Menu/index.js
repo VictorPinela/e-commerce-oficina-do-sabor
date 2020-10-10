@@ -19,15 +19,12 @@ const menu = props => {
 
                 <div className='faixa-vermelha'>
                     <ul>
-                        {/* <li>
-                            <Link to='/login'>O Restaurante</Link>
-                        </li> */}
                         <li>
                             <Link to='/'>Produtos</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to='#'>Cardápio</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to='/login' ><img src={login} alt='Entre na sua conta' /></Link>
                         </li>

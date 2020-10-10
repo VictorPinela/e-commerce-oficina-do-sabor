@@ -2,17 +2,15 @@ import React from 'react';
 import styles from './styles.css';
 import Menu from '../../Components/Menu';
 
-const Initial = () => {
+const Busca = () => {
     return (
-        <div id='areaLogin'>
-            <div id='bodyLogin'>
+        <div id='areaBusca'>
+            <div id='bodyBusca'>
                 <Menu />
-                <div className='form-login'>
-                
-                   <div className='login'>
-                        <div className='conteudo'>
-
-                            <h1>teste meu deus</h1>
+                <div className='form-Busca'>
+                    <div className='Busca'>
+                        <div className='borda-interna'>
+                            <h1 id='tituloPag'>Busca</h1>
                         </div>
                     </div>
                 </div>
@@ -21,5 +19,4 @@ const Initial = () => {
         </div>
     );
 }
-
-export default Initial;
+export default Busca;
