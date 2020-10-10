@@ -81,13 +81,10 @@ const Initial = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </>
     );
 }
-
 
 export default Initial;

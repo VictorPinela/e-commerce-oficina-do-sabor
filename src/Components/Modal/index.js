@@ -1,9 +1,7 @@
 import React from 'react';
-
-
 import './styles.css';
 
-const Modal = ({ onClose= () => {}, children }) => {
+const Modal = ({ onClose = () => { }, children }) => {
     return (
         <div className='modal'>
             <div className='container-modal'>
