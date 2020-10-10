@@ -3,11 +3,11 @@ import './styles.css';
 import imagem from '../../assets/images/products/bolinha-de-queijo.jpg';
 
 const DescProduto = () => {
-    return(
+    return (
         <div className="container">
             <h1 className="nome-produto">Bolinha de Queijo</h1>
             <div className="div-img">
-                <img id='img-produto' src={imagem} alt="imagem aleatoria"/>
+                <img id='img-produto' src={imagem} alt="imagem aleatoria" />
             </div>
             <div className="descricao">
                 <p className="descricao-texto">Salgado artesanal, empanado, embalado e refrigerado,

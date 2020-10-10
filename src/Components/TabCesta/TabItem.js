@@ -5,11 +5,12 @@ const TabItem = () => {
     return (
         <table id='tabela'>
             <tr>
-                <td>Pizza</td>
-                <td>1</td>
-                <td>R$30,00</td>
+                <td>Bolinha de Queijo</td>
+                <td>10</td>
+                <td>R$15,00</td>
             </tr>
         </table>
     );
 }
+
 export default TabItem;
