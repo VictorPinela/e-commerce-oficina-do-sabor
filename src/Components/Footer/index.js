@@ -11,7 +11,7 @@ const Footer = props => {
             <div id='footer_black'>
                 
                 <p>Todos os Direitos Reservados</p>
-                <img src={LogoBranco}/>
+                <img src={LogoBranco} alt='Imagem de footer'/>
                         
             </div>
            

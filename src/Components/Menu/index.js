@@ -22,9 +22,9 @@ const menu = props => {
                         <li>
                             <Link to='/'>Produtos</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to='#'>Cardápio</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to='/login' ><img src={login} alt='Entre na sua conta' /></Link>
                         </li>
