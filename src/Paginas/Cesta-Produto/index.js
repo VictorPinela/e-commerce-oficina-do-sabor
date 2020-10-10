@@ -4,7 +4,6 @@ import Menu from '../../Components/Menu';
 import TabCesta from '../../Components/TabCesta';
 import TabItem from '../../Components/TabCesta/TabItem';
 
-
 const Cesta = () => {
     return (
         <div id='areaCesta'>
@@ -16,8 +15,8 @@ const Cesta = () => {
                             <h1 id='tituloPag'>Sua cesta</h1>
                             <TabCesta />
                             <div id='btn'>
-                                <button id='botao1' onClick={()=> Deletar()}>Limpar cesta</button>
-                                <button id='botao2' onClick={()=> Finalizar()}>Finalizar Compra</button>
+                                <button id='botao1' onClick={() => Deletar()}>Limpar cesta</button>
+                                <button id='botao2' onClick={() => Finalizar()}>Finalizar Compra</button>
                             </div>
                         </div>
                     </div>
@@ -27,15 +26,16 @@ const Cesta = () => {
     );
 }
 
-function Deletar(){
-    if(document.getElementById("tab1") != null){
-    document.getElementById("tab1").remove();}
-    else(
+function Deletar() {
+    if (document.getElementById("tab1") != null) {
+        document.getElementById("tab1").remove();
+    }
+    else (
         alert('Cesta vazia!')
     )
 }
 
-function Finalizar(){
+function Finalizar() {
     alert('Compra finalizada!')
 }
 

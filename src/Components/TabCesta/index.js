@@ -14,8 +14,8 @@ function TabCesta() {
                 </tr>
             </table>
             <span id='tab1'>
-            <TabItem />
-            <TabItem />
+                <TabItem />
+                <TabItem />
             </span>
             <TabTotal />
         </div>

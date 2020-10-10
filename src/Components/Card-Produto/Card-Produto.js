@@ -78,9 +78,11 @@ const CardProduto = (props) => {
             </CardContent>
           </CardActionArea>
         </Link>
-        <CardActions>
-          <Button size="large" className={classes.button}>Adicionar Ao Carrinho</Button>
-        </CardActions>
+        <Link to='/cesta-produto' className={classes.link}>
+          <CardActions>
+            <Button size="large" className={classes.button}>Adicionar Ao Carrinho</Button>
+          </CardActions>
+        </Link>
       </Card>
     </>
   );
