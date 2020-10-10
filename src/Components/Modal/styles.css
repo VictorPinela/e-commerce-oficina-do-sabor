@@ -1,6 +1,6 @@
 .modal {
    width: 100%;
-   height: 70vh;
+   height: 100%;
    position: absolute;
    top:0;
    left:0;
@@ -13,7 +13,6 @@
 .container-modal{
     background-color: var(--color-text-primary);
     width: 100%;
-    height: 70%;
     color: #000000;  
 
 }
@@ -34,20 +33,17 @@ input[type="button"] {
 }
 @media(min-width: 800px) {
     .modal{
-        height: 100vh;
+        height: 100%;
     }
     .container-modal{
-        width: 100%;
-        height: 56%;
-        margin-bottom: 11%;
-    
+        width: 100%;  
     }
     .container-modal input[type="button"] {
         margin-right: 2% ;
         
     }
     .close {
-        top: 4rem;
+        top: 0rem;
 
     }
 }

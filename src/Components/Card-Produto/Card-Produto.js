@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -7,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
+import { Domain } from '@material-ui/icons';
 
 const useStyles = makeStyles({
   root: {
@@ -33,6 +35,9 @@ const useStyles = makeStyles({
     height: 'auto',
     display: 'inline-block'
   },
+  link: {
+    color: 'black'
+  },
 
   imagem: {
     width: 'auto',
@@ -48,32 +53,36 @@ const CardProduto = (props) => {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root}>
-      <CardActionArea className={classes.actionArea}>
-        <CardMedia 
-          component="img"
-          className={classes.imagem}
-          image={props.imagem}
-        />
-        <CardContent>
-          <Typography className={classes.title} color="textSecondary" gutterBottom>
-            {props.tipoProduto}
-        </Typography>
-          <Typography variant="h5" component="h2">
-            {props.titulo}
-        </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            {props.quantidade}
-        </Typography>
-          <Typography variant="body2" component="p">
-            {props.descricao}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+    <>
+      <Card className={classes.root}>
+        <Link to='/detalhe-produto' className={classes.link}>
+          <CardActionArea className={classes.actionArea}>
+            <CardMedia
+              component="img"
+              className={classes.imagem}
+              image={props.imagem}
+            />
+            <CardContent>
+              <Typography className={classes.title} color="textSecondary" gutterBottom>
+                {props.tipoProduto}
+              </Typography>
+              <Typography variant="h5" component="h2">
+                {props.titulo}
+              </Typography>
+              <Typography className={classes.pos} color="textSecondary">
+                {props.quantidade}
+              </Typography>
+              <Typography variant="body2" component="p">
+                {props.descricao}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Link>
         <CardActions>
           <Button size="large" className={classes.button}>Adicionar Ao Carrinho</Button>
         </CardActions>
-    </Card>
+      </Card>
+    </>
   );
 }
 

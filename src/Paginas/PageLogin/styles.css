@@ -24,12 +24,15 @@
     margin-left: -5%;
     margin-right: -5%;
     color:black;
+    display: block;
  }
  #areaLogin #bodyLogin .borda-interna .conteudo {
      border: 1px solid #CCC;
      border-radius: 5px;
      position: relative;
      padding: 10px;
+     left: 50%;
+     transform: translateX(-50%);
  }
 
 #areaLogin #bodyLogin .borda-interna .conteudo #cadastro, 
@@ -236,6 +239,11 @@ input[type="submit"]{
 /*estilo do botão submit no hover */
 input[type="submit"]:hover{
     background: var(--color-hover-back);
+}
+.error {
+    font-size: 1rem;
+    color:red;
+    font-style: italic;
 }
 
 /* Responsividade */
