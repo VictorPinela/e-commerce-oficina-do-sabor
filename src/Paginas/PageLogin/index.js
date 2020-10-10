@@ -192,15 +192,46 @@ const PageLogin = props => {
                                             </p>
                                             <p>
                                                 <label >CEP </label>
-                                                <input name='cep_cad' required='required' type='number' placeholder='xxxxxxx' />
+                                                <input
+                                                    id='cep_cad'
+                                                    name='cep'
+                                                    type='text'
+                                                    placeholder='00000-000'
+                                                    ref={register({
+                                                        required: 'Digite seu CEP',
+                                                        pattern: {
+                                                            value: /^\d{​​​​​​​5}​​​​​​​-\d{​​​​​​​3}​​​​​​​$/i,
+                                                            message: "Entre com um CEP válido",
+                                                        }
+                                                    })}
+                                                />
+                                                {errors.cep && <p className="error">{errors.cep.message}</p>}
                                             </p>
                                             <p>
                                                 <label >Endereço </label>
-                                                <input name='endereco_cad' required='required' type='text' placeholder='Rua ou Avenida' />
+                                                <input
+                                                    id='end_cad'
+                                                    name='end'
+                                                    type='text'
+                                                    placeholder='Insira seu endereço'
+                                                    ref={register({
+                                                        required: 'Insira seu endereço',
+                                                    })}
+                                                />
+                                                {errors.end && <p className="error">{errors.end.message}</p>}
                                             </p>
                                             <p>
                                                 <label >Número </label>
-                                                <input name='num_cad' required='required' type='number' placeholder='Número' />
+                                                <input
+                                                    id='num_cad'
+                                                    name='numero'
+                                                    type='numero'
+                                                    placeholder='Insira o número da sua residência'
+                                                    ref={register({
+                                                        required: 'Insira um número',
+                                                    })}
+                                                />
+                                                {errors.numero && <p className="error">{errors.numero.message}</p>}
                                             </p>
                                             <p>
                                                 <input type='submit' value='Cadastrar' />
